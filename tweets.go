@@ -35,6 +35,15 @@ type Tweet struct {
 			Url         string  `json:"url"`
 			ExpandedUrl string  `json:"expanded_url"`
 		} `json:"urls"`
+		Media []struct {
+			DisplayUrl    string  `json:"display_url"`
+			Indices       []int64 `json:"indices"`
+			Url           string  `json:"url"`
+			ExpandedUrl   string  `json:"expanded_url"`
+			MediaUrl      string  `json:"media_url"`
+			MediaUrlHttps string  `json:"media_url_https"`
+			Type          string  `json:"type"`
+		} `json:"urls"`
 		Hashtags []struct {
 			Text    string  `json:"text"`
 			Indices []int64 `json:"indices"`
