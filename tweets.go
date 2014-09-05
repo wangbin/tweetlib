@@ -43,7 +43,7 @@ type Tweet struct {
 			MediaUrl      string  `json:"media_url"`
 			MediaUrlHttps string  `json:"media_url_https"`
 			Type          string  `json:"type"`
-		} `json:"urls"`
+		} `json:"media"`
 		Hashtags []struct {
 			Text    string  `json:"text"`
 			Indices []int64 `json:"indices"`
